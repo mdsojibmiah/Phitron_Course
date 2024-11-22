@@ -1,0 +1,6 @@
+INT -> 4Byte
+LONG INT -> 4Byte
+LONG LONG INT -> 8Byte
+FLOAT -> 4Byte
+DOUBLE -> 8Byte
+CHAR -> 1Byte
