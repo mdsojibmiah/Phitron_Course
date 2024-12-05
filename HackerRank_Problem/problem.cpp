@@ -12,4 +12,3 @@ int main(){
     }
     cout<<ct;
 }
-#include<iostream>
