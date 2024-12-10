@@ -1,40 +1,32 @@
 #include<bits/stdc++.h>
 using namespace std;
-int main(){
-    int row,col;cin>>row>>col;
+
+int main() {
+    int row, col;
+    cin >> row >> col;
+
+    if (row != col) {
+        cout << "Diagonal must be Square matrix" << endl;
+        return 0;
+    }
+
     int a[row][col];
-    if(row!=col){
-        cout<<"Diagonal must be Squre matrix"<<endl;
-    }
-    // Input array 
-    for(int i=0;i<row;i++){
-        for(int j=0;j<col;j++){
-            cin>>a[i][j];
-        }
-    }
-    // Diagonal matrix check
-    if(row==col){
-        int flag=1;
-        for(int i=0;i<row;i++){
-            for(int j=0;j<col;j++){
-                if(i==j){
-                    continue;
-                }
-                if(a[i][j]!=0){
-                    flag++;
-                }
+    bool isDiagonal = true;
+
+    for (int i = 0; i < row; i++) {
+        for (int j = 0; j < col; j++) {
+            cin >> a[i][j];
+            if (i != j && a[i][j] != 0) {
+                isDiagonal = false;
             }
-        }
-        if(flag==1){
-        cout<< "Diagonal";
-        }
-        else{
-        cout<<"Not Diagonal";
         }
     }
 
-    else{
-        cout<<"Not Diagonal"<<endl;
+    if (isDiagonal) {
+        cout << "Diagonal" << endl;
+    } else {
+        cout << "Not Diagonal" << endl;
     }
+
     return 0;
 }
