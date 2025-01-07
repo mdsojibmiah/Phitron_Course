@@ -2,7 +2,7 @@
    Email: mdsojibmiah.coder@gmail.com
    Date  : 01 / 07 / 2025
    Time  : 22:27
-   Problem Link: https://www.codechef.com/problems/PRIMEREVERSE
+   Problem Link: https://www.codechef.com/problems/a
 */
 
 #include <bits/stdc++.h>
@@ -10,10 +10,6 @@ using namespace std;
 
 #define ll long long
 #define nl '\n'
-#define YES cout << "YES\n";
-#define NO cout << "NO\n";
-#define Yes cout << "Yes\n";
-#define No cout << "No\n";
 #define ld long double
 #define pb push_back
 #define all(v) v.begin(), v.end()
@@ -32,7 +28,7 @@ void solve() {
         string a, b;
         cin >> n >> a >> b;
         for (char x : a) x == '0' ? c0++ : c1++;
-        cout << (c0 == count(b.begin(), b.end(), '0') ? YES : NO);
+        cout << (c0 == count(b.begin(), b.end(), '0') ? "YES\n" : "NO\n");
     }
 }
 
