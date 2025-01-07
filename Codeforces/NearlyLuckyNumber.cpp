@@ -10,6 +10,10 @@ using namespace std;
 
 #define ll long long
 #define nl '\n'
+#define YES cout << "YES\n";
+#define NO cout << "NO\n";
+#define Yes cout << "Yes\n";
+#define No cout << "No\n";
 #define ld long double
 #define pb push_back
 #define all(v) v.begin(), v.end()
@@ -32,9 +36,9 @@ void solve() {
     }
 
     if (count == 4 || count == 7) {
-        cout << "YES" << nl;
+        YES
     } else {
-        cout << "NO" << nl;
+        NO
     }
 }
 
