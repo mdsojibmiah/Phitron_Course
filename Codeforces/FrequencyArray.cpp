@@ -29,7 +29,7 @@ void solve() {
         c[x]++;
     }
     for (int i = 1; i <= m; i++) {
-        cout << c[i] << endl;
+        cout << c[i] << nl;
     }
 }
 
