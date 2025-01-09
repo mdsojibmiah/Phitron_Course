@@ -10,14 +10,6 @@ using namespace std;
 
 #define ll long long
 #define nl '\n'
-#define YES cout << 'YES
-'
-#define Yes cout << 'Yes
-'
-#define NO cout << 'NO
-'
-#define No cout << 'No
-'
 #define ld long double
 #define pb push_back
 #define all(v) v.begin(), v.end()
