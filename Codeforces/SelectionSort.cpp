@@ -32,7 +32,7 @@ void solve() {
         }
         swap(a[i], a[m]);
         for (k = 0; k < n; k++) cout << a[k] << " ";
-        cout << endl;
+        cout << nl;
     }
 }
 
