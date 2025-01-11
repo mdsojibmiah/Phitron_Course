@@ -21,15 +21,26 @@ const ld PI = acos(-1.0);
 #define fast_io ios::sync_with_stdio(false); cin.tie(NULL); cout.tie(NULL);
 
 void solve() {
-    // Your code here
+    int n, c = 0;
+    cin >> n;
+    cout.tie(0);
+    for (int i = 2; i <= n; i++) {
+        bool is_prime = true;
+        for (int j = 2; j * j <= i; j++)
+            if (i % j == 0) {
+                is_prime = false;
+                break;
+            }
+        if (is_prime) {
+            c++;
+            cout << i << " ";
+        }
+    }
+    cout << "\n" << c << nl;
 }
 
 int main() {
     fast_io;
-    int t;
-    cin >> t;
-    while (t--) {
-        solve();
-    }
+    solve();
     return 0;
 }
