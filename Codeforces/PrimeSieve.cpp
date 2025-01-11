@@ -36,7 +36,7 @@ void solve() {
             cout << i << " ";
         }
     }
-    cout << "\n" << c << nl;
+
 }
 
 int main() {
