@@ -10,14 +10,6 @@ using namespace std;
 
 #define ll long long
 #define nl '\n'
-#define YES cout << 'YES
-'
-#define Yes cout << 'Yes
-'
-#define NO cout << 'NO
-'
-#define No cout << 'No
-'
 #define ld long double
 #define pb push_back
 #define all(v) v.begin(), v.end()
@@ -29,15 +21,23 @@ const ld PI = acos(-1.0);
 #define fast_io ios::sync_with_stdio(false); cin.tie(NULL); cout.tie(NULL);
 
 void solve() {
-    // Your code here
+    int n, i, j, k, m;
+    cin >> n;
+    vector<int> a(n);
+    for (i = 0; i < n; i++) cin >> a[i];
+    for (i = 0; i < n - 1; i++) {
+        m = i;
+        for (j = i + 1; j < n; j++) {
+            if (a[j] < a[m]) m = j;
+        }
+        swap(a[i], a[m]);
+        for (k = 0; k < n; k++) cout << a[k] << " ";
+        cout << endl;
+    }
 }
 
 int main() {
     fast_io;
-    int t;
-    cin >> t;
-    while (t--) {
-        solve();
-    }
+    solve();
     return 0;
 }
