@@ -22,7 +22,15 @@ using namespace std;
 #define fast_io ios::sync_with_stdio(false); cin.tie(NULL); cout.tie(NULL);
 
 void solve() {
-              
+    int n, p = 0, s = 0, x;
+    cin >> n;
+    for (int i = 0; i < n; i++)
+        for (int j = 0; j < n; j++) {
+            cin >> x;
+            if (i == j) p += x;
+            if (i + j == n - 1) s += x;
+        }
+    cout << abs(p - s) << nl;           
 }
 
 int main() {
