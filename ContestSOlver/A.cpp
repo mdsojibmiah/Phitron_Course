@@ -2,7 +2,7 @@
    Email: mdsojibmiah.coder@gmail.com
    Date  : 02 / 09 / 2025
    Time  : 21:45
-   Problem Link: 
+   Problem Link: https://codeforces.com/contest/2065/problem/A
 */
 
 #include <bits/stdc++.h>
@@ -22,15 +22,18 @@ using namespace std;
 #define fast_io ios::sync_with_stdio(false); cin.tie(NULL); cout.tie(NULL);
 
 void solve() {
-              
+    int t;
+    cin >> t;
+
+    while (t--) {
+        string W;
+        cin >> W;
+        cout << W.substr(0, W.length() - 2) + "i" << endl;
+    }             
 }
 
 int main() {
     fast_io;
-    int t;
-    cin >> t;
-    while (t--) {
-        solve();
-    }
+    solve();
     return 0;
 }
