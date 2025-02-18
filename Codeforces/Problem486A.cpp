@@ -24,15 +24,11 @@ using namespace std;
 void solve() {
     ll n;
     cin >> n;
-    cout << (n % 2 ? -(n + 1) / 2 : n / 2) << endl;             
+    cout << (n % 2 ? -(n + 1) / 2 : n / 2) << nl;             
 }
 
 int main() {
     fast_io;
-    int t;
-    cin >> t;
-    while (t--) {
-        solve();
-    }
+    solve();
     return 0;
 }
