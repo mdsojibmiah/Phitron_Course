@@ -24,7 +24,7 @@ using namespace std;
 void solve() {
     string p;
     cin >> p;
-    for (char c : p) if (c == 'H' || c == 'Q' || c == '9') { cout << "YES"; return 0; }
+    for (char c : p) if (c == 'H' || c == 'Q' || c == '9') { cout << "YES"; }
     cout << "NO";
            
 }
