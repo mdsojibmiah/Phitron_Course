@@ -2,7 +2,7 @@
    Email: mdsojibmiah.coder@gmail.com
    Date  : 03 / 02 / 2025
    Time  : 22:15
-   Problem Link: 
+   Problem Link: https://codeforces.com/problemset/problem/58/A
 */
 
 #include <bits/stdc++.h>
@@ -22,15 +22,14 @@ using namespace std;
 #define fast_io ios::sync_with_stdio(false); cin.tie(NULL); cout.tie(NULL);
 
 void solve() {
-              
+    string s, h="hello"; cin >> s;
+    int j=0;
+    for(char c : s) if(c == h[j]) j++;
+    cout << (j == 5 ? "YES" : "NO");             
 }
 
 int main() {
     fast_io;
-    int t;
-    cin >> t;
-    while (t--) {
-        solve();
-    }
+    solve();
     return 0;
 }
