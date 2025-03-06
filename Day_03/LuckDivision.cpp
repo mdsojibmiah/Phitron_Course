@@ -2,7 +2,7 @@
    Email: mdsojibmiah.coder@gmail.com
    Date  : 03 / 06 / 2025
    Time  : 18:44
-   Problem Link: 
+   Problem Link: https://codeforces.com/problemset/problem/122/A
 */
 
 #include <bits/stdc++.h>
@@ -21,16 +21,23 @@ using namespace std;
 
 #define fast_io ios::sync_with_stdio(false); cin.tie(NULL); cout.tie(NULL);
 
-void solve() {
-              
+bool isLucky(int x) {
+    while (x) {
+        if (x % 10 != 4 && x % 10 != 7) return false;
+        x /= 10;
+    }
+    return true;
 }
-
 int main() {
     fast_io;
-    int t;
-    cin >> t;
-    while (t--) {
-        solve();
+    int n;
+    cin >> n;
+    for (int i = 1; i <= n; i++) {
+        if (isLucky(i) && n % i == 0) {
+            cout << "YES";
+            return 0;
+        }
     }
+    cout << "NO";
     return 0;
 }
