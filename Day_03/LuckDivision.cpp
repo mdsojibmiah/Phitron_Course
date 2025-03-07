@@ -21,10 +21,10 @@ using namespace std;
 
 #define fast_io ios::sync_with_stdio(false); cin.tie(NULL); cout.tie(NULL);
 
-bool isLucky(int x) {
-    while (x) {
-        if (x % 10 != 4 && x % 10 != 7) return false;
-        x /= 10;
+bool isLucky(int y) {
+    while (y) {
+        if (y % 10 != 4 && y % 10 != 7) return false;
+        y /= 10;
     }
     return true;
 }
