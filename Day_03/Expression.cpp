@@ -22,15 +22,13 @@ using namespace std;
 #define fast_io ios::sync_with_stdio(false); cin.tie(NULL); cout.tie(NULL);
 
 void solve() {
-              
+    int a, b, c;
+    cin >> a >> b >> c;
+    cout << max({a + b + c, a * b * c, (a + b) * c, a * (b + c)});             
 }
 
 int main() {
     fast_io;
-    int t;
-    cin >> t;
-    while (t--) {
-        solve();
-    }
+    solve();
     return 0;
 }
