@@ -25,9 +25,9 @@ void solve() {
     string s;
     getline(cin,s);
     set<char>st;
-    for (char c:s)
+    for (char c:s){
         if (isalpha(c)) st.insert(c);
-      
+    } 
     cout << st.size();        
 }
 
