@@ -22,15 +22,17 @@ using namespace std;
 #define fast_io ios::sync_with_stdio(false); cin.tie(NULL); cout.tie(NULL);
 
 void solve() {
-              
+    string s;
+    getline(cin,s);
+    set<char>st;
+    for (char c:s)
+        if (isalpha(c)) st.insert(c);
+      
+    cout << st.size();        
 }
 
 int main() {
     fast_io;
-    int t;
-    cin >> t;
-    while (t--) {
-        solve();
-    }
+    solve();
     return 0;
 }
