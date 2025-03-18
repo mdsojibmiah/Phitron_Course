@@ -22,15 +22,16 @@ using namespace std;
 #define fast_io ios::sync_with_stdio(false); cin.tie(NULL); cout.tie(NULL);
 
 void solve() {
-              
+    int t, a, b, c;
+    cin >> t;
+    while (t--) {
+        cin >> a >> b >> c;
+        cout << ((a + b == c || a + c == b || b + c == a) ? "YES\n" : "NO\n");
+    }            
 }
 
 int main() {
     fast_io;
-    int t;
-    cin >> t;
-    while (t--) {
-        solve();
-    }
+    solve();
     return 0;
 }
