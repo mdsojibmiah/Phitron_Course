@@ -22,7 +22,15 @@ using namespace std;
 #define fast_io ios::sync_with_stdio(false); cin.tie(NULL); cout.tie(NULL);
 
 void solve() {
-              
+    int n, m;
+    cin >> n >> m;
+    vector<int> f(m);
+    for (int i = 0; i < m; i++) cin >> f[i];
+    sort(f.begin(), f.end());
+    int r = f[n - 1] - f[0];
+    for (int i = 1; i + n - 1 < m; i++)
+        r = min(r, f[i + n - 1] - f[i]);
+    cout << r;            
 }
 
 int main() {
