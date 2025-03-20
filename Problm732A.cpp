@@ -22,11 +22,11 @@ using namespace std;
 #define fast_io ios::sync_with_stdio(false); cin.tie(NULL); cout.tie(NULL);
 
 void solve() {
-    int n, s = 0;
+    int n;
     cin >> n;
     int a[n];
-    for (int i = 0; i < n; i++) cin >> a[i], s += a[i];
-    cout << s;            
+    for (int i = 0; i < n; i++) cin >> a[i];
+    cout << accumulate(a, a + n, 0);            
 }
 
 int main() {
