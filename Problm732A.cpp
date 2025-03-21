@@ -16,7 +16,7 @@ using namespace std;
 #define No cout << 'No\n'
 #define ld long double
 #define pb push_back
-#define all(v) v.begin(), v.end()
+#define all(v) v.begin(), v.end()P
 
 
 #define fast_io ios::sync_with_stdio(false); cin.tie(NULL); cout.tie(NULL);
