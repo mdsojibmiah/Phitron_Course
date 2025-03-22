@@ -2,7 +2,7 @@
    Email: mdsojibmiah.coder@gmail.com
    Date  : 03 / 22 / 2025
    Time  : 09:41
-   Problem Link: 
+   Problem Link: https://codeforces.com/problemset/problem/1676/A
 */
 
 #include <bits/stdc++.h>
